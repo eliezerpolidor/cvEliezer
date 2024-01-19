@@ -1,128 +1,118 @@
-main {
-    display:flex;
-    width: 100%;
-    height: 100%;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main_menu{
+    display: flex;
     
 }
-
-.menu {
+.bar_nav{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height:550px;
+    margin: 1px 2px;
     background: #bdc3c7;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to bottom, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
+    background: linear-gradient(to bottom, #455b71, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     box-shadow: 0 0 20px 0 rgba(83, 14, 14, 0.8);
-    width: 25%;
-    height: 97%;
-    margin-right: 6px;
-    text-align: center;
-    position: fixed;
-
 }
-
-.content {
-    background: #8e9eab;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #eef2f3, #8e9eab);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #eef2f3, #8e9eab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-    box-shadow: 0 0 20px 0 rgba(83, 14, 14, 0.8);
+.content{
+    display: flex;
+    flex-direction: column;
     width: 75%;
-    height: 100%;
-    margin-left: 330px;
-    position: fixed;
+    height:550px;
+    margin: 1px 2px;
+    background: #bdc3c7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #91a9c1, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #b2bcc6, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    box-shadow: 0 0 20px 0 rgba(83, 14, 14, 0.8);
 }
-
+.cvphoto{
+    width: 25;
+    height:calc(550-330) ;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.bar_nav_link{
+    width: 22;
+    height: calc(550-220);
+    overflow-y:auto;
+    margin: 3px;
+    font-size: 20px;
+}
+.photoeliezer {
+    border-radius: 50%;
+    margin: 5px 0 auto;
+    width: 35%;
+}
+a{
+    text-decoration: none;
+}
 h1,
 h2,
 h3{
     color: white;
-    margin: 0;
+    margin: auto;
     padding: 0;
-    text-align: center;
-
+    width: max-content;
+    font-size: 2.5vw;
 }
 h2{
-    font-size: 18px;
+    font-size: 2vw;
     font-style: italic;
+}
+h3{
+    font-size: 1.5vw;
+    font-style: italic;
+}
+.h5{
+    font-size: 30px;
+    text-decoration:underline double blue;
+    margin-bottom: 15px;
+}
+hr{
+    height: 3px;
+    background: #080808;
+    border-color: #080808;
+}
+
+.nav_menu_item{
+    list-style: none;
+}
+
+.emailwhatsapp{
+    font-size: 1.8vw;
+    margin: 30px 50px;
+}
+.bars{
+    display: none;
+}
+.imgemail,
+.imgwhatsApp{
+    width: 4%;
+}
+.imgbars{
+    width: 70%;
+    background:none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    color: white;
     
 }
-
-h3{
-    font-size: 14px;
-    font-style: italic;
-    margin: 0;
+.contactame{
+    font-size: 40px;
+    text-align: center;
 }
-
-h4,
-h5{
-    font-size: 20px;
-    margin: 4px;
-    vertical-align:text-top;
+.coverletter{
+    font-size: 28px;
+    text-align: justify;
+    margin: 25px 45px;
 }
-
-.photoeliezer {
-    border-radius: 50%;
-    width: 50%;
-    margin: 5px 0 auto;
-}
-
-.venecana{
-    border-radius: 50%;
-    width: 25%;
-    margin: 5px 0 auto;
-}
-
-.canada {
-    width: 145%;
-    height: 145%;
-    margin: 0;
-    padding-top: 8px;
-    padding-bottom: 5px;
-    opacity: 0.3;
-}
-
-.whatsap {
-    color:darkgreen ;
-    font-size: 3em;
-    position: absolute;
-    top:28%;
-    left: 85%;
-    transform:translate(-30%,-85%);
-    /* padding-right: 20px; */
-}
-
-.email {
-    font-size: 3em;
-    color:blue ;
-    position: absolute;
-    top: 26%;
-    left: 50%;
-    transform:translate(-10%,-50%);
-    /* padding: 0 15px 0 0; */
-}
-
-.article{
-    position: relative;
-    display: inline-block;
-    text-align:justify;
-}
-
-.text-above{
-    position: absolute;
-    top: 25%;
-    left: 60%;
-    transform:translate(-10%,-50%);
-    font-size: 30px;
-
-}
-
-.parragraph-above {
-    position: absolute;
-    top: 0;
-    left: 15%;
-    transform: translate(15%,50%);
-    font-size: 22px
-}
-
+/*******COPY FROM HERE**********/
 /* -----RESET RULES––––––––––– */
 
 :root {
@@ -135,25 +125,6 @@ h5{
 }
 
 /*optiones of menu*/
-.hskill{
-    padding: 0 59px;
-}
-
-.hstudies{
-    padding: 0 46px;
-}
-.hcertifications{
-    padding: 0 19px;
-}
-.hbriefcase{
-    padding: 0 38px;
-}
-.hdata{
-    padding: 0 17px;
-}
-.hsocial{
-    padding: 0 8px;
-}
 
 /*for create windows modal*/
 .btn-group {
@@ -162,18 +133,21 @@ h5{
     width: 90%;
     text-align: center;
     margin: 0.6em auto 0 auto;
-    font: 10px/1.5 sans-serif;
+    font: 10px/1 sans-serif;
 }
 
 .open-modal {
     font-weight: bold;
-    font-size: 0.2rem;
+    font-size: 1.2rem;
     color: var(--white);
     padding: 0;
     margin-bottom: 0;
     border-radius: 5px;
     background: linear-gradient(hsl(186, 76%, 16%), hsl(223, 90%, 60%), hsl(240, 56%, 42%));
     box-shadow: 0 0 20px 0 blue;
+    border: #2c3e50 solid;
+    width: 80%;
+    cursor: pointer;
 }
 
 /*------modal------*/
@@ -242,13 +216,141 @@ ol {
     padding-left: 1.5rem;
 }
 
-.option7{
-    display: flex;
-    justify-content:space-around;
-    font-size: 2em;
-
-}
-
 .imgin{
     width: 22%;
+}
+
+/*FOR MOVIL*/
+@media (max-width:1048px){
+    .bar_nav_link {
+        display: none;
+    }
+    .bar_nav, hr{
+        align-items: center;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        box-shadow: none;
+    }
+    
+    .cvphoto{
+        width: 80%;
+        /* height:calc(550-330); */
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+    
+    hr{
+        margin: 5px;
+    }
+    .contactame{
+        font-size: 70px;
+        position: absolute;
+        top: 170px;
+        text-align: right;
+        /* right: 20px; */
+    }
+    .bars, 
+    .whatsap,
+    .email{
+        display:inline; 
+        margin-left: 30px;
+        font-size: 40px;
+        cursor: pointer;
+        z-index: 6;
+    }
+    .coverletter{
+        position: absolute;
+        top: 540px;
+        
+        font-size: 40px;
+        text-align: justify;
+        margin: 0;
+        padding: 20px;
+        width: 100%;
+        height: 100%;
+        background: #bdc3c7;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to bottom, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to bottom, #455b71, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        overflow-y: auto;
+    }
+h1,
+h2,
+h3{
+    font-size: 2.5vw;
+}
+    .h5{
+        font-size: 50px;
+        text-decoration:underline double white;
+        margin-bottom: 20px;
+    }
+    .bar_nav_link{
+        display:inline;
+        position: absolute;
+        top: 540px;
+        left: 2.1%;
+        width: 95%;
+        height: 160%;
+        z-index: 4;
+        background: #bdc3c7;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to bottom, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to bottom, #455b71, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        box-shadow: 0 0 20px 0 rgba(83, 14, 14, 0.8);
+        visibility: hidden;
+        opacity: 0;
+        }
+        .bar_nav_link_visible{
+           visibility: visible;
+           opacity: 1;
+        }
+        .btn-group {
+            width: 80%;
+            font: 20px/1.5 sans-serif;
+        }  
+        .bar_nav_link{
+            font-size: 20px;
+        }
+        .open-modal {
+            font-size: 50px;
+            padding: 8px;
+            margin-bottom: 2px;
+            border-radius: 5px;
+            background: linear-gradient(hsl(186, 76%, 16%), hsl(223, 90%, 60%), hsl(240, 56%, 42%));
+            box-shadow: 0 0 20px 0 blue;
+            border: #2c3e50 solid;
+            width: 80%;
+            height: 100%;
+            cursor: pointer;
+        }
+
+        .whatsap {
+            color:darkgreen ;
+        }
+        
+        .email {
+            color:blue ;
+        }
+        .imgemail,
+        .imgwhatsApp{
+            width: 5%;
+        }
+        /*modal*/
+        .open-modal {
+            background: linear-gradient(hsl(186, 76%, 16%), hsl(223, 90%, 60%), hsl(240, 56%, 42%));
+            box-shadow: 0 0 20px 0 blue;
+            border: #2c3e50 solid;
+            width: 80%;
+            cursor: pointer;
+        }
+
+        .modal-dialog {
+            position: relative;
+            max-width: 900px;
+            max-height: 100vh;
+            border-radius: 5px;
+            background: var(--white);
+            overflow: auto;
+            cursor: default;
+        }
 }
