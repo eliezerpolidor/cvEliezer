@@ -242,7 +242,8 @@ ol {
     }
     
     hr{
-        margin: 5px;
+        margin: 0px;
+        padding: 1px 0;
     }
     .contactame{
         font-size: 70px;
