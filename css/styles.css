@@ -40,7 +40,7 @@
     width: 22;
     height: calc(550-220);
     overflow-y:auto;
-    margin: 3px;
+    margin: 2px;
     font-size: 20px;
 }
 .photoeliezer {
@@ -138,7 +138,7 @@ hr{
 
 .open-modal {
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: var(--white);
     padding: 0;
     margin-bottom: 0;
