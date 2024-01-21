@@ -242,8 +242,11 @@ ol {
     }
     
     hr{
-        margin: 0px;
-        padding: 1px 0;
+        margin: 2px;
+        height: 2px;
+        background-color:#91a9c1 ;
+        border-color: #91a9c1;
+        /* padding: 1px 0; */
     }
     .contactame{
         font-size: 70px;
