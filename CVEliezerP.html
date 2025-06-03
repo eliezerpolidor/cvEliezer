@@ -1,380 +1,439 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-    <meta name="vierport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="index, follow">
-    <meta name="author" content="Eliezer Polidor">
-    <meta name="date" content="2024-01-12">
-    <meta name="description" content="Cv Eliezer Polidor desarrollador web en el backend y en el frontend">
-    <meta name="keywords" content="cv Eliezer Polidor">
-    <title>CV Eliezer Polidor</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="shortcut icon" href="./img/photEliezer.png" type="image/x-icon"> 
-    <script defer src="index.js"></script>
-  </head>
-  <body>
-    <div class="main_menu">
-      <div class="bar_nav">
-        <div class="cvphoto">
-            <h1>CV Eliezer Polidor</h1>
-            <strong><h2>Desarrollador WEB</h2></strong>
-            <img src="./img/photEliezer.png" alt="Photo Eliezer Polidor" title="Photo Eliezer" class="photoeliezer">
-            <h3>.Net-C#-Javascript-ReactJs</h3>
-            <hr>            
-        </div>
-        <div id="bar_nav_lin" class="bar_nav_link">
-           <nav class="nav_menu">
-              <ul class="nav_menu_item btn-group">
-                <li class="nav_menu_item_link"><button type="button" class="open-modal" data-open="modal1">
-                  <h4>Experiencia Laboral
 
-                  </h4>
-                </button><br><br></li>
-                <li class="nav_menu_item_link"><button type="button" class="open-modal escritorio escritorio-visible" data-open="modal2">
-                  <h4>Skill</h4>
-                </button><br><br></li>
-                <li class="nav_menu_item_link"><button type="button" class="open-modal escritorio escritorio-visible" data-open="modal3">
-                  <h4>Estudios Realizados</h4>
-                </button><br><br></li>
-                <li class="nav_menu_item_link"><button type="button" class="open-modal escritorio escritorio-visible" data-open="modal4">
-                 <h4>Certificaciones</h4>
-                </button><br><br></li>
-                <li class="nav_menu_item_link"><button type="button" class="open-modal escritorio escritorio-visible" data-open="modal5"><h4>Datos Personales</h4>
-                </button><br><br></li>
-                <li class="nav_menu_item_link"><button type="button" class="open-modal escritorio escritorio-visible" data-open="modal6"><h4>Portafolio Trabajos</h4>
-                </button><br><br></li>
-                <a href="./cvEliezer.pdf" target="_blank" class="open-modal" style="margin: auto;">Imprimir</a>
-              </ul>
-           </nav> 
-          <!--firts option-->
-          <div class="modal" id="modal1" data-animation="slideInOutLeft">
-            <div class="modal-dialog">
-                <header class="modal-header">
-                  Experiencia Laboral
-                    <button class="close-modal" aria-label="close modal" data-close>
-                  ✕  
-                    </button>
-                </header>
-                <section class="modal-content">
-                    <p><strong>Presione ✕, ESC, o click fuera de la ventana para cerrarla</strong></p>
-                    <hr>
-                    <br><br>
-                    <dl>
-                      <dt><strong>Empresa: Acord International Perú.</strong></dt>
-                      <dd><u>Cargo:</u> Desarrollador Frontend / Backend </dd>
-                      <dd>.- <u>Contracto:</u> Honorarios Professional.- <u>Modalidad:</u> Remotly Outsourcing</dd>
-                      <dd>.- <u>Actividades Realizadas:</u></dd>
-                      <dd>
-                        Realizar modificaciones a un Sistema creado en C#, detectar fallas en procedimientos almacenados y corregirlos, esto fue en SQL SERVER, Tecnología utilizada: C#, SQL SERVER, TRANSA-SQL.
-                      </dd>
-                      <dd>.- <u>Motivo de Retiro:</u></dd>
-                      <dd>
-                        El contrato finalizó por 1 año y 3 meses. La compañía me llamó nuevamente después de 2 semanas para crear alguna PLANTILLA en HTML/CSS/esto los creó en JAVASCRIPT.
-                      </dd>
-                      <hr>
-                      <br><br>
-                      <dt><strong>Empresa: Agency Consulting Chile.</strong></dt>
-                      <dd><u>Cargo:</u> Desarrollador Frontend / Backend </dd>
-                      <dd>.- <u>Contracto:</u> Honorarios Professional.- <u>Modalidad:</u> Remotly Outsourcing</dd>
-                      <dd>.- <u>Actividades Realizadas:</u></dd>
-                      <dd>
-                        Agregue el módulo de Orden de Compra al Sistema TPA en la parte Backend, trabaje con c#, Linq y Entity Framework creando un EndPoint y en la parte Frontend agregue la pantalla de interfaz de usuario usando ReactJs y modifique el resto API para realizar la llamada del servicio y consumirlo, usar SOPA para enviar la información, usar Git y GitLab, SourceTree para clonar los repositorios.
-                      </dd>
-                      <dd>.- <u>Motivo de Retiro:</u></dd>
-                      <dd>
-                        El contrato finalizó.
-                      </dd>
-                      <hr>
-                      <br><br>
-                      <dt> <strong>Empresa: BANDIT SOLUTIONS, S.L.  Puerto Rico</strong> </dt>
-                      <dd> <u>Cargo:</u> Desarrollador .NET C# y SQL Server.</dd>
-                      <dd>.- <u>Contracto:</u> Honorarios Professional.- <u>Modalidad:</u> Remotly Outsourcing</dd>
-                      <dd>.- <u>Actividades Realizadas:</u></dd>
-                      <dd>
-                          .- Realizar modificaciones al Sistema de Seguros Azul, trabajar con archivos de extensión ASP.NET, C# cshtml y estuve a cargo de detectar fallas en los procedimientos almacenados y corregirlos. Esto lo hice con la Unidad de Centroamérica; Con la unidad de Colombia me encargué de apoyarlos en el desarrollo de un módulo para realizar pruebas para que este funcione con Selenium y con los archivos fuente de C#. Tecnologías utilizadas: C#, SQL Server, Asp.Net, Jira para reportar actividades asignadas, Git, GitHub, SourceTree y TFS para clonar los repositorios.
-                      </dd>
-                      <hr>  
-                      <br><br>
-                      <dt> <strong>Empresa: ENTREPIDUS.</strong> </dt>
-                      <dd><b> <u>Cargo:</u> Desarrollador .NET.</b></dd>
-                      <dd>.- <u>Contracto:</u> Honorarios Professional.- <u>Modalidad:</u> Remotly Outsourcing</dd>
-                      <dd>.- <u>Actividades Realizadas:</u></dd>
-                      <dd>
-                        Realizar modificaciones a un sistema desarrollado en Visual Studio. - Tecnologías utilizadas: C#, SQL Server, la biblioteca LINQ y Frameworks: ASP.NET / Pyton / NodeJs.
-                      </dd>
-                      <hr>
-                      <br><br>
-                      <dt> <strong>Empresa: Soluciones Informáticas FAIBAMAR.</strong> </dt>
-                      <dd> <u>Cargo:</u> Progamador.</dd>
-                      <dd>.- <u>Contracto:</u> Contrato Fijo.- <u>Modalidad:</u> Presencial</dd>
-                      <dd>.- <u>Actividades Realizadas:</u></dd>
-                      <dd>
-                        Realizar mantenimiento en el sistema administrativo en JavaScript. Tecnologías utilizadas: HTML, CSS, JavaScript, ReactJs.
-                      </dd>
-                    </dl>
-                </section>
-            </div>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <meta name="vierport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Eliezer Polidor">
+  <meta name="date" content="2024-01-12">
+  <meta name="description" content="Cv Eliezer Polidor desarrollador web en el backend y en el frontend">
+  <meta name="keywords" content="cv Eliezer Polidor">
+  <title>CV Eliezer Polidor</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="shortcut icon" href="./img/photEliezer.jpg" type="image/x-icon">
+  <script defer src="index.js"></script>
+</head>
+
+<body>
+  <div class="main_menu">
+    <div class="bar_nav">
+      <div class="cvphoto">
+        <h1>CV Eliezer Polidor</h1>
+        <strong>
+          <h2>Desarrollador WEB</h2>
+        </strong>
+        <img src="./img/photEliezer.jpg" alt="Photo Eliezer Polidor" title="Photo Eliezer" class="photoeliezer">
+        <h3>.Net-C#-Javascript-ReactJs</h3>
+        <hr>
+      </div>
+      <div id="bar_nav_lin" class="bar_nav_link">
+        <nav class="nav_menu">
+          <ul class="nav_menu_item btn-group">
+            <li class="nav_menu_item_link"><button type="button" class="open-modal" data-open="modal1">
+                <h4>Experiencia Laboral
+
+                </h4>
+              </button><br><br></li>
+            <li class="nav_menu_item_link"><button type="button" class="open-modal escritorio escritorio-visible"
+                data-open="modal2">
+                <h4>Skill</h4>
+              </button><br><br></li>
+            <li class="nav_menu_item_link"><button type="button" class="open-modal escritorio escritorio-visible"
+                data-open="modal3">
+                <h4>Estudios Realizados</h4>
+              </button><br><br></li>
+            <li class="nav_menu_item_link"><button type="button" class="open-modal escritorio escritorio-visible"
+                data-open="modal4">
+                <h4>Certificaciones</h4>
+              </button><br><br></li>
+            <li class="nav_menu_item_link"><button type="button" class="open-modal escritorio escritorio-visible"
+                data-open="modal5">
+                <h4>Datos Personales</h4>
+              </button><br><br></li>
+            <li class="nav_menu_item_link"><button type="button" class="open-modal escritorio escritorio-visible"
+                data-open="modal6">
+                <h4>Portafolio Trabajos</h4>
+              </button><br><br></li>
+            <a href="./cvEliezer.pdf" target="_blank" class="open-modal" style="margin: auto;">Imprimir</a>
+          </ul>
+        </nav>
+        <!--firts option-->
+        <div class="modal" id="modal1" data-animation="slideInOutLeft">
+          <div class="modal-dialog">
+            <header class="modal-header">
+              Experiencia Laboral
+              <button class="close-modal" aria-label="close modal" data-close>
+                ✕
+              </button>
+            </header>
+            <section class="modal-content">
+              <p><strong>Presione ✕, ESC, o click fuera de la ventana para cerrarla</strong></p>
+              <hr>
+              <br><br>
+              <dl>
+                <dt><strong>Empresa: Acord International Perú.</strong></dt>
+                <dd><u>Cargo:</u> Desarrollador Frontend / Backend </dd>
+                <dd>.- <u>Contracto:</u> Honorarios Professional.- <u>Modalidad:</u> Remotly Outsourcing</dd>
+                <dd>.- <u>Actividades Realizadas:</u></dd>
+                <dd>
+                  Realizar modificaciones a un Sistema creado en C#, detectar fallas en procedimientos almacenados y
+                  corregirlos, esto fue en SQL SERVER, Tecnología utilizada: C#, SQL SERVER, TRANSA-SQL.
+                </dd>
+                <dd>.- <u>Motivo de Retiro:</u></dd>
+                <dd>
+                  El contrato finalizó por 1 año y 3 meses. La compañía me llamó nuevamente después de 2 semanas para
+                  crear alguna PLANTILLA en HTML/CSS/esto los creó en JAVASCRIPT.
+                </dd>
+                <hr>
+                <br><br>
+                <dt><strong>Empresa: Agency Consulting Chile.</strong></dt>
+                <dd><u>Cargo:</u> Desarrollador Frontend / Backend </dd>
+                <dd>.- <u>Contracto:</u> Honorarios Professional.- <u>Modalidad:</u> Remotly Outsourcing</dd>
+                <dd>.- <u>Actividades Realizadas:</u></dd>
+                <dd>
+                  Agregue el módulo de Orden de Compra al Sistema TPA en la parte Backend, trabaje con c#, Linq y Entity
+                  Framework creando un EndPoint y en la parte Frontend agregue la pantalla de interfaz de usuario usando
+                  ReactJs y modifique el resto API para realizar la llamada del servicio y consumirlo, usar SOPA para
+                  enviar la información, usar Git y GitLab, SourceTree para clonar los repositorios.
+                </dd>
+                <dd>.- <u>Motivo de Retiro:</u></dd>
+                <dd>
+                  El contrato finalizó.
+                </dd>
+                <hr>
+                <br><br>
+                <dt> <strong>Empresa: BANDIT SOLUTIONS, S.L. Puerto Rico</strong> </dt>
+                <dd> <u>Cargo:</u> Desarrollador .NET C# y SQL Server.</dd>
+                <dd>.- <u>Contracto:</u> Honorarios Professional.- <u>Modalidad:</u> Remotly Outsourcing</dd>
+                <dd>.- <u>Actividades Realizadas:</u></dd>
+                <dd>
+                  .- Realizar modificaciones al Sistema de Seguros Azul, trabajar con archivos de extensión ASP.NET, C#
+                  cshtml y estuve a cargo de detectar fallas en los procedimientos almacenados y corregirlos. Esto lo
+                  hice con la Unidad de Centroamérica; Con la unidad de Colombia me encargué de apoyarlos en el
+                  desarrollo de un módulo para realizar pruebas para que este funcione con Selenium y con los archivos
+                  fuente de C#. Tecnologías utilizadas: C#, SQL Server, Asp.Net, Jira para reportar actividades
+                  asignadas, Git, GitHub, SourceTree y TFS para clonar los repositorios.
+                </dd>
+                <hr>
+                <br><br>
+                <dt> <strong>Empresa: ENTREPIDUS.</strong> </dt>
+                <dd><b> <u>Cargo:</u> Desarrollador .NET.</b></dd>
+                <dd>.- <u>Contracto:</u> Honorarios Professional.- <u>Modalidad:</u> Remotly Outsourcing</dd>
+                <dd>.- <u>Actividades Realizadas:</u></dd>
+                <dd>
+                  Realizar modificaciones a un sistema desarrollado en Visual Studio. - Tecnologías utilizadas: C#, SQL
+                  Server, la biblioteca LINQ y Frameworks: ASP.NET / Pyton / NodeJs.
+                </dd>
+                <hr>
+                <br><br>
+                <dt> <strong>Empresa: Soluciones Informáticas FAIBAMAR.</strong> </dt>
+                <dd> <u>Cargo:</u> Progamador.</dd>
+                <dd>.- <u>Contracto:</u> Contrato Fijo.- <u>Modalidad:</u> Presencial</dd>
+                <dd>.- <u>Actividades Realizadas:</u></dd>
+                <dd>
+                  Realizar mantenimiento en el sistema administrativo en JavaScript. Tecnologías utilizadas: HTML, CSS,
+                  JavaScript, ReactJs.
+                </dd>
+              </dl>
+            </section>
           </div>
-          <!--second option-->
-          <div class="modal" id="modal2" data-animation="slideInOutLeft">
-            <div class="modal-dialog">
-                <header class="modal-header">
-                  Skill
-                    <button class="close-modal" aria-label="close modal" data-close>
-                  ✕  
-                    </button>
-                </header>
-                <section class="modal-content">
-                  <p><strong>Presione ✕, ESC, o click fuera de la ventana para cerrarla</strong></p>
-                  <hr>
-                  <br><br>
-                  <article>   
-                    <dl>
-                      <dt><strong><u>FRONTEND</u> </strong> </dt>
-                      <dt>•	HTML.</dt>
-                      <dt>•	CSS.</dt>
-                      <dt>•	JavaScript.</dt>
-                      <dt>•	ReactJS</dt>
-                      <dt>•	Librerias Redux / Router </dt>
-                    </dl>
-                  </article>
-                  <hr>
-                  <br><br>
-                  <article>
-                    <dl>
-                      <dt><strong><u>BACKEND</u> </strong> </dt>
-                      <dt>•	C# / LINQ / ENTITY FRAMEWORK.</dt>
-                      <dt>•	ASP.NET.</dt>
-                      <dt>•	NodeJs.</dt>
-                      <dt>•	SQL SERVER.</dt>
-                      <dt>•	Visual Studio Cod</dt>
-                    </dl>
-                  </article>
-                  <hr>
-                  <br><br>
-                  <article>
-                    <dl>
-                      <dt><strong><u>EXPERENCE WITH</u> </strong> </dt>
-                      <dt>•	Git/GitHub / SorceTree.</dt>
-                      <dt>•	Slack/Team.</dt>
-                      <dt>•	TFS / Azure.</dt>
-                      <dt>•	Jira.</dt>
-                      <dt>•	Api Rest SOAP/SOAPUI.</dt>
-                      <dt>•	Swagger/Postman.</dt>
-                      <dt>•	AnyDesck / Forticlien.</dt>
-                    </dl>
-                  </article>
-                </section>
-            </div>
+        </div>
+        <!--second option-->
+        <div class="modal" id="modal2" data-animation="slideInOutLeft">
+          <div class="modal-dialog">
+            <header class="modal-header">
+              Skill
+              <button class="close-modal" aria-label="close modal" data-close>
+                ✕
+              </button>
+            </header>
+            <section class="modal-content">
+              <p><strong>Presione ✕, ESC, o click fuera de la ventana para cerrarla</strong></p>
+              <hr>
+              <br><br>
+              <article>
+                <dl>
+                  <dt><strong><u>FRONTEND</u> </strong> </dt>
+                  <dt>• HTML.</dt>
+                  <dt>• CSS.</dt>
+                  <dt>• JavaScript.</dt>
+                  <dt>• ReactJS</dt>
+                  <dt>• Librerias Redux / Router </dt>
+                </dl>
+              </article>
+              <hr>
+              <br><br>
+              <article>
+                <dl>
+                  <dt><strong><u>BACKEND</u> </strong> </dt>
+                  <dt>• C# / LINQ / ENTITY FRAMEWORK.</dt>
+                  <dt>• ASP.NET.</dt>
+                  <dt>• NodeJs.</dt>
+                  <dt>• SQL SERVER.</dt>
+                  <dt>• Visual Studio Cod</dt>
+                </dl>
+              </article>
+              <hr>
+              <br><br>
+              <article>
+                <dl>
+                  <dt><strong><u>EXPERENCE WITH</u> </strong> </dt>
+                  <dt>• Git/GitHub / SorceTree.</dt>
+                  <dt>• Slack/Team.</dt>
+                  <dt>• TFS / Azure.</dt>
+                  <dt>• Jira.</dt>
+                  <dt>• Api Rest SOAP/SOAPUI.</dt>
+                  <dt>• Swagger/Postman.</dt>
+                  <dt>• AnyDesck / Forticlien.</dt>
+                </dl>
+              </article>
+            </section>
           </div>
-          <!--third option-->
-          <div class="modal" id="modal3" data-animation="slideInOutLeft">
-            <div class="modal-dialog">
-                <header class="modal-header">
-                  NIVEL ACADÉMICO
-                    <button class="close-modal" aria-label="close modal" data-close>
-                  ✕  
-                    </button>
-                </header>
-                <section class="modal-content">
-                    <p><strong>Presione ✕, ESC, o click fuera de la ventana para cerrarla</strong></p>
-                    <hr>
-                    <br><br>
-                    <article>
-                      <dl>
-                        <dt><strong>
-                          Técnico Superior Universitario en Informática</strong> </dt>
-                        <dd><b>.- Carrera Tecnica Universitaria: 3 años.</b></dd>
-                        <dd>.-Instituo Universitario “Rodolfo Loera Arismendi” IUTIRLA - Caracas -Venezuela</dd>
-                      </dl>
-                    </article>
-                </section>
-            </div>
-          </div>  
-          <!--fourth option-->
-          <div class="modal" id="modal4" data-animation="slideInOutLeft">
-            <div class="modal-dialog">
-                <header class="modal-header">
-                  Certificaciones
-                    <button class="close-modal" aria-label="close modal" data-close>
-                  ✕  
-                    </button>
-                </header>
-                <section class="modal-content">
-                    <p><strong>Presione ✕, ESC, o click fuera de la ventana para cerrarla</strong></p>
-                    <hr><br><br>
+        </div>
+        <!--third option-->
+        <div class="modal" id="modal3" data-animation="slideInOutLeft">
+          <div class="modal-dialog">
+            <header class="modal-header">
+              NIVEL ACADÉMICO
+              <button class="close-modal" aria-label="close modal" data-close>
+                ✕
+              </button>
+            </header>
+            <section class="modal-content">
+              <p><strong>Presione ✕, ESC, o click fuera de la ventana para cerrarla</strong></p>
+              <hr>
+              <br><br>
+              <article>
+                <dl>
+                  <dt><strong>
+                      Técnico Superior Universitario en Informática</strong> </dt>
+                  <dd><b>.- Carrera Tecnica Universitaria: 3 años.</b></dd>
+                  <dd>.-Instituo Universitario “Rodolfo Loera Arismendi” IUTIRLA - Caracas -Venezuela</dd>
+                </dl>
+              </article>
+            </section>
+          </div>
+        </div>
+        <!--fourth option-->
+        <div class="modal" id="modal4" data-animation="slideInOutLeft">
+          <div class="modal-dialog">
+            <header class="modal-header">
+              Certificaciones
+              <button class="close-modal" aria-label="close modal" data-close>
+                ✕
+              </button>
+            </header>
+            <section class="modal-content">
+              <p><strong>Presione ✕, ESC, o click fuera de la ventana para cerrarla</strong></p>
+              <hr><br><br>
               <article>
                 <dl>
                   <dt>• Responsive Web Design.</dt>
                   <dd>.- freeCodeCamp /.- Developer Certification / 300 Horas / Expedición Abril 2023.</dd>
-                  <dd><a target="_blank" href="https://drive.google.com/file/d/1k0QLYlRUeubPlDwO63OHmMgDLS2ywVyX/view?usp=drive_link">.- Ver Certificación</a></dd>
+                  <dd><a target="_blank"
+                      href="https://drive.google.com/file/d/1k0QLYlRUeubPlDwO63OHmMgDLS2ywVyX/view?usp=drive_link">.-
+                      Ver Certificación</a></dd>
                   <hr><br><br>
-                  <dt>•	Development Fundamentals web: Full Stack o Front-end.</dt>
+                  <dt>• Development Fundamentals web: Full Stack o Front-end.</dt>
                   <dd>.- Linkedin / .- Expedición: 2022.</dd>
-                  <dd><a target="_blank" href="https://www.linkedin.com/learning/certificates/2a1757adb7e59501524335f5f260d2f41162d1cf4ed723210e49a3939100fac6?trk=share_certificate">.- Ver Certificación</a></dd>
+                  <dd><a target="_blank"
+                      href="https://www.linkedin.com/learning/certificates/2a1757adb7e59501524335f5f260d2f41162d1cf4ed723210e49a3939100fac6?trk=share_certificate">.-
+                      Ver Certificación</a></dd>
                   <hr><br><br>
-                  <dt>•	JavaScript Avanzado.</dt>
+                  <dt>• JavaScript Avanzado.</dt>
                   <dd>.- Linkedin / .- Expedición: 2022.</dd>
-                  <dd><a target="_blank" href="https://www.linkedin.com/learning/certificates/2f2d4f1e0e940b34779d053d3e30a231b7eab72c62449e8c91585091260f5856">.- Ver Certification</a></dd>
+                  <dd><a target="_blank"
+                      href="https://www.linkedin.com/learning/certificates/2f2d4f1e0e940b34779d053d3e30a231b7eab72c62449e8c91585091260f5856">.-
+                      Ver Certification</a></dd>
                   <dl>
                     <hr><br><br>
-                    <dt>•	JavaScript Esencial.</dt>
+                    <dt>• JavaScript Esencial.</dt>
                     <dd>.- Linkedin / .- Expedición: 2022.</dd>
-                    <dd><a target="_blank" href="https://www.linkedin.com/learning/certificates/85a351f322bab5227c6c344f58dff9cd4c2a43c5eca8cbeb84241fff1863f6e6">.- Ver Certificación</a></dd>
+                    <dd><a target="_blank"
+                        href="https://www.linkedin.com/learning/certificates/85a351f322bab5227c6c344f58dff9cd4c2a43c5eca8cbeb84241fff1863f6e6">.-
+                        Ver Certificación</a></dd>
                     <hr><br><br>
-                    <dt>•	Introducción al Desarrollo WEB I.</dt>
+                    <dt>• Introducción al Desarrollo WEB I.</dt>
                     <dd>.- Google Activate / .- 40 Horas /.- Expedición: 2022.</dd>
-                    <dd><a target="_blank" href="https://drive.google.com/file/d/1e0k9eeInSAzhc-Vizsh9gtj9sD-UiE9y/view?usp=sharing">.- Ver Certification</a></dd>
+                    <dd><a target="_blank"
+                        href="https://drive.google.com/file/d/1e0k9eeInSAzhc-Vizsh9gtj9sD-UiE9y/view?usp=sharing">.- Ver
+                        Certification</a></dd>
                     <hr><br>
-                    <dt>•	GitHub para Programadores.</dt>
+                    <dt>• GitHub para Programadores.</dt>
                     <dd style="font-size:17px;">.- Linkedin / .- Expedición: 2022.</dd>
-                    <dd><a target="_blank" href="https://www.linkedin.com/learning/certificates/fecb505e19ced1382bfb0e321dd649bc444dc064258194f5d728e83a8eb1840c?trk=share_certificate">.- Ver  Certificación</a></dd>
+                    <dd><a target="_blank"
+                        href="https://www.linkedin.com/learning/certificates/fecb505e19ced1382bfb0e321dd649bc444dc064258194f5d728e83a8eb1840c?trk=share_certificate">.-
+                        Ver Certificación</a></dd>
                   </dl>
                 </dl>
-              </dl>
+                </dl>
               </article>
-                </section>
-            </div>
-          </div>  
-          <!--fifth option-->
-          <div class="modal" id="modal5" data-animation="slideInOutLeft">
+            </section>
+          </div>
+        </div>
+        <!--fifth option-->
+        <div class="modal" id="modal5" data-animation="slideInOutLeft">
           <div class="modal-dialog">
-                <header class="modal-header">
-                  Datos Personales
+            <header class="modal-header">
+              Datos Personales
 
-                    <button class="close-modal" aria-label="close modal" data-close>
-                  ✕  
-                    </button>
-                </header>
-                <section class="modal-content">
-                    <p><strong>Presione ✕, ESC, o click fuera de la ventana para cerrarla</strong></p>
-                    <hr><br><br>
-                    <ol>
-                      <li><b>Nombres:</b> Eliezer Jose</li>
-                      <li><b>Apellidos:</b> Polidor Solano</li>
-                      <li><b>Cédula:</b> V-6730850</li>
-                      <li><b>Nacionalidad:</b>Venezolano</li>
-                      <li><b>Pais de Residencia:</b> Venezuela</li>
-                      <li><b>Télefono:</b> +58 04264700721(WhatsApp)</li>
-                  </ol>
-                </section>
-            </div>
-          </div> 
-          <!--six option-->
-          <div class="modal" id="modal6" data-animation="slideInOutLeft">
-            <div class="modal-dialog">
-                  <header class="modal-header">
-                    Portafolio de trabajo
+              <button class="close-modal" aria-label="close modal" data-close>
+                ✕
+              </button>
+            </header>
+            <section class="modal-content">
+              <p><strong>Presione ✕, ESC, o click fuera de la ventana para cerrarla</strong></p>
+              <hr><br><br>
+              <ol>
+                <li><b>Nombres:</b> Eliezer Jose</li>
+                <li><b>Apellidos:</b> Polidor Solano</li>
+                <li><b>Cédula:</b> V-6730850</li>
+                <li><b>Nacionalidad:</b>Venezolano</li>
+                <li><b>Pais de Residencia:</b> Venezuela</li>
+                <li><b>Télefono:</b> +58 04264700721(WhatsApp)</li>
+              </ol>
+            </section>
+          </div>
+        </div>
+        <!--six option-->
+        <div class="modal" id="modal6" data-animation="slideInOutLeft">
+          <div class="modal-dialog">
+            <header class="modal-header">
+              Portafolio de trabajo
 
-                      <button class="close-modal" aria-label="close modal" data-close>
-                    ✕  
-                      </button>
-                  </header>
-                  <section class="modal-content">
-                      <p><strong>Presione ✕, ESC, o click fuera de la ventana para cerrarla</strong></p>
-                      <hr><br><br>
-                      <dl>
-                        <dt><a target="_blank" href="https://github.com/eliezerpolidor/VisualStudioExample.git">.-Visual Studio Example</a></dt>
-                        <dd>Usando C#</dd>
-                        <hr><br><br>
-                        <dt><a target="_blank" href="https://github.com/eliezerpolidor/AppAspNetCoreD1.git">.-App Asp Net CoreD1</a></dt>
-                        <dd>Usando Asp/C#</dd>
-                        <hr><br><br>
-                        <dt><a target="_blank" href="https://github.com/eliezerpolidor/WebApiAspNetCore.git">.-Web Api Asp Net Core</a></dt>
-                        <dd>Usando C#/HTML/CSS/JAVASCRIPT/REACTJS/TSQL</dd>
-                        <hr><br><br>
-                        <dt><a target="_blank" href="https://github.com/eliezerpolidor/VSExamplesCode.git">.-Visual Studio Examples Code</a></dt>
-                        <dd>Usando C#/TSQL/CRUD_ENTITY/LINQ/VECTORES</dd>
-                        <hr><br><br>
-                        <dt><a target="_blank" href="https://github.com/eliezerpolidor/System-Invocesing-Customers.git">.-Cliente Facturacón</a></dt>
-                        <dd>Usando ReactJs/Redux/Router</dd>
-                        <hr><br><br>
-                        <dt><a target="_blank" href="https://github.com/eliezerpolidor/setState.git">.-Ejercicio setState</a></dt>
-                        <dd> Usando ReactJs/Jsx</dd>
-                        <hr><br><br>
-                      </dl>
-                      <dl>
-                        <dt><a target="_blank" href="https://github.com/eliezerpolidor/excerciseUseState.git">.-Ejercicio usando Hooks</a></dt>
-                        <dd>Usando ReactJs/Jsx</dd>
-                        <hr><br><br>
-                        <dt><a target="_blank" href="https://github.com/eliezerpolidor/CourseReactJs.git">.-Curso React/Redux/Router</a></dt>
-                        <dd>Desarrollando un Curso Básico/Intermedio usando Redux y Router</dd>
-                        <hr><br><br>
-                        <dt><a target="_blank" href="https://github.com/eliezerpolidor/testwalletweb.git">.-Test wallet web</a></dt>
-                        <dd>Usando CSS (Interfaz Gráfica)</dd>
-                        <hr><br><br>
-                        <dt><a target="_blank" href="https://github.com/eliezerpolidor/testwalletapi.git">.-Test wallet web</a></dt>
-                        <dd>Usando Javacript Vanilla</dd>
-                        <hr><br><br>
-                        <dt><a target="_blank" href="https://github.com/eliezerpolidor/CommandGuideMarkdown.git">.-Comandos de Markdown explicados de manera sencilla</a></dt>
-                        <dd>Guía Básica</dd>
-                        <hr><br><br>
-                        <dt><a target="_blank" href="https://github.com/eliezerpolidor/ChallengeJavaScript.git">.-Problemas JavaScript, diferentes niveles dificultad</a></dt>
-                        <dd>Usando JavaScript Vanilla</dd>
-      
-                      </dl>
-                  </section>
-              </div>
-          </div> 
-        </div>
-      </div>
-      <div class="content">
-        <div class="emailwhatsapp">
-          <p class="parragraph-above"><b><u>Desarrollador WEB</u></b>/ Lenguajes c# - Javascript - IDE .NET - ReactJs <br>eliezerpolidor@gmail.com / WhatsApp: +58 04264700721 </p>
-        </div>  
-        <div class="contactame">
-          <strong><h5 class="text-above">Contactame</h5></strong>
-          <a href="mailto:eliezerpolidor@gmail.com" target="_blank" title="Enviar email para eliezerpolidor@gmail.com" class="email">
-          <!-- <i class="fa-solid fa-envelope"></i> -->
-          <img src="./img/email.png" alt="icono emial" class="imgemail">
-          </a>
-          <a href="https://api.whatsapp.com/send?phone=584264700721" class="whatsap" target="_blank" title="Enviar WhatsApp para Eliezer Polidor(+58-04264700721)">
-            <!-- <i class="fa-brands fa-whatsapp"></i> -->
-            <img src="./img/whatsapp.png" alt="icono WhatsApp" class="imgwhatsApp">
-          </a>
-          <button class="bars">
-            <!-- <i class="fa-solid fa-bars"></i> -->
-            <img src="./img/menubars.png" alt="icono bars" class="imgbars">
-          </button>
-        </div>
-        <div class="coverletter bar_nav_link_visible">
-          <h5 class="h5">COVER LETTER:</h5>
-          <p>Mi nombre es <strong><u>Eliezer Polidor</u></strong>, soy <b><u>Desarrollador WEB</u></b>, tengo mas de 4 años en el área Desarrollo WEB, estoy presentando mi CV donde reflejo mis datos así como mi experiencia, por favor si Usted nota que mis habilidades, conocimiento y experiencia le puede ser de utilidad, me encantaría que me contactara para una entrevista, y de esta manera poder integrar su equipo de trabajo para apoyarlos en el logro de sus objetivos como empresa así como crecer yo profesionalmente.</p>
+              <button class="close-modal" aria-label="close modal" data-close>
+                ✕
+              </button>
+            </header>
+            <section class="modal-content">
+              <p><strong>Presione ✕, ESC, o click fuera de la ventana para cerrarla</strong></p>
+              <hr><br><br>
+              <dl>
+                <dt><a target="_blank" href="https://github.com/eliezerpolidor/VisualStudioExample.git">.-Visual Studio
+                    Example</a></dt>
+                <dd>Usando C#</dd>
+                <hr><br><br>
+                <dt><a target="_blank" href="https://github.com/eliezerpolidor/AppAspNetCoreD1.git">.-App Asp Net
+                    CoreD1</a></dt>
+                <dd>Usando Asp/C#</dd>
+                <hr><br><br>
+                <dt><a target="_blank" href="https://github.com/eliezerpolidor/WebApiAspNetCore.git">.-Web Api Asp Net
+                    Core</a></dt>
+                <dd>Usando C#/HTML/CSS/JAVASCRIPT/REACTJS/TSQL</dd>
+                <hr><br><br>
+                <dt><a target="_blank" href="https://github.com/eliezerpolidor/VSExamplesCode.git">.-Visual Studio
+                    Examples Code</a></dt>
+                <dd>Usando C#/TSQL/CRUD_ENTITY/LINQ/VECTORES</dd>
+                <hr><br><br>
+                <dt><a target="_blank"
+                    href="https://github.com/eliezerpolidor/System-Invocesing-Customers.git">.-Cliente Facturacón</a>
+                </dt>
+                <dd>Usando ReactJs/Redux/Router</dd>
+                <hr><br><br>
+                <dt><a target="_blank" href="https://github.com/eliezerpolidor/setState.git">.-Ejercicio setState</a>
+                </dt>
+                <dd> Usando ReactJs/Jsx</dd>
+                <hr><br><br>
+              </dl>
+              <dl>
+                <dt><a target="_blank" href="https://github.com/eliezerpolidor/excerciseUseState.git">.-Ejercicio usando
+                    Hooks</a></dt>
+                <dd>Usando ReactJs/Jsx</dd>
+                <hr><br><br>
+                <dt><a target="_blank" href="https://github.com/eliezerpolidor/CourseReactJs.git">.-Curso
+                    React/Redux/Router</a></dt>
+                <dd>Desarrollando un Curso Básico/Intermedio usando Redux y Router</dd>
+                <hr><br><br>
+                <dt><a target="_blank" href="https://github.com/eliezerpolidor/testwalletweb.git">.-Test wallet web</a>
+                </dt>
+                <dd>Usando CSS (Interfaz Gráfica)</dd>
+                <hr><br><br>
+                <dt><a target="_blank" href="https://github.com/eliezerpolidor/testwalletapi.git">.-Test wallet web</a>
+                </dt>
+                <dd>Usando Javacript Vanilla</dd>
+                <hr><br><br>
+                <dt><a target="_blank" href="https://github.com/eliezerpolidor/CommandGuideMarkdown.git">.-Comandos de
+                    Markdown explicados de manera sencilla</a></dt>
+                <dd>Guía Básica</dd>
+                <hr><br><br>
+                <dt><a target="_blank" href="https://github.com/eliezerpolidor/ChallengeJavaScript.git">.-Problemas
+                    JavaScript, diferentes niveles dificultad</a></dt>
+                <dd>Usando JavaScript Vanilla</dd>
+
+              </dl>
+            </section>
+          </div>
         </div>
       </div>
     </div>
-    <!--javascript-->
-    <script>
-      const openEls = document.querySelectorAll("[data-open]");
-      const closeEls = document.querySelectorAll("[data-close]");
-      const isVisible = "is-visible";
+    <div class="content">
+      <div class="emailwhatsapp">
+        <p class="parragraph-above"><b><u>Desarrollador WEB</u></b>/ Lenguajes c# - Javascript - IDE .NET - ReactJs
+          <br>eliezerpolidor@gmail.com / WhatsApp: +58 04264700721
+        </p>
+      </div>
+      <div class="contactame">
+        <strong>
+          <h5 class="text-above">Contactame</h5>
+        </strong>
+        <a href="mailto:eliezerpolidor@gmail.com" target="_blank" title="Enviar email para eliezerpolidor@gmail.com"
+          class="email">
+          <!-- <i class="fa-solid fa-envelope"></i> -->
+          <img src="./img/email.png" alt="icono emial" class="imgemail">
+        </a>
+        <a href="https://api.whatsapp.com/send?phone=584264700721" class="whatsap" target="_blank"
+          title="Enviar WhatsApp para Eliezer Polidor(+58-04264700721)">
+          <!-- <i class="fa-brands fa-whatsapp"></i> -->
+          <img src="./img/whatsapp.png" alt="icono WhatsApp" class="imgwhatsApp">
+        </a>
+        <button class="bars">
+          <!-- <i class="fa-solid fa-bars"></i> -->
+          <img src="./img/menubars.png" alt="icono bars" class="imgbars">
+        </button>
+      </div>
+      <div class="coverletter bar_nav_link_visible">
+        <h5 class="h5">COVER LETTER:</h5>
+        <p>Mi nombre es <strong><u>Eliezer Polidor</u></strong>, soy <b><u>Desarrollador WEB</u></b>, tengo mas de 4
+          años en el área Desarrollo WEB, estoy presentando mi CV donde reflejo mis datos así como mi experiencia, por
+          favor si Usted nota que mis habilidades, conocimiento y experiencia le puede ser de utilidad, me encantaría
+          que me contactara para una entrevista, y de esta manera poder integrar su equipo de trabajo para apoyarlos en
+          el logro de sus objetivos como empresa así como crecer yo profesionalmente.</p>
+      </div>
+    </div>
+  </div>
+  <!--javascript-->
+  <script>
+    const openEls = document.querySelectorAll("[data-open]");
+    const closeEls = document.querySelectorAll("[data-close]");
+    const isVisible = "is-visible";
 
-      for (const el of openEls) {
-          el.addEventListener("click", function() {
-              const modalId = this.dataset.open;
-              document.getElementById(modalId).classList.add(isVisible);
-          });
-      }
-
-      for (const el of closeEls) {
-          el.addEventListener("click", function() {
-              this.parentElement.parentElement.parentElement.classList.remove(isVisible);
-          });
-      }
-
-      document.addEventListener("click", e => {
-          if (e.target == document.querySelector(".modal.is-visible")) {
-              document.querySelector(".modal.is-visible").classList.remove(isVisible);
-          }
+    for (const el of openEls) {
+      el.addEventListener("click", function () {
+        const modalId = this.dataset.open;
+        document.getElementById(modalId).classList.add(isVisible);
       });
+    }
 
-      document.addEventListener("keyup", e => {
-          // if we press the ESC
-          if (e.key == "Escape" && document.querySelector(".modal.is-visible")) {
-              document.querySelector(".modal.is-visible").classList.remove(isVisible);
-          }
+    for (const el of closeEls) {
+      el.addEventListener("click", function () {
+        this.parentElement.parentElement.parentElement.classList.remove(isVisible);
       });
+    }
+
+    document.addEventListener("click", e => {
+      if (e.target == document.querySelector(".modal.is-visible")) {
+        document.querySelector(".modal.is-visible").classList.remove(isVisible);
+      }
+    });
+
+    document.addEventListener("keyup", e => {
+      // if we press the ESC
+      if (e.key == "Escape" && document.querySelector(".modal.is-visible")) {
+        document.querySelector(".modal.is-visible").classList.remove(isVisible);
+      }
+    });
   </script>
-  </body>
+</body>
+
 </html>
