@@ -117,7 +117,6 @@ hr{
 
 :root {
     --lightgray: linear-gradient(hsl(186, 76%, 16%), hsl(223, 90%, 60%), hsl(240, 56%, 42%));
-    ;
     --blue: steelblue;
     --white: #fff;
     --black: rgba(0, 0, 0, 0.3);
@@ -190,6 +189,7 @@ hr{
 .modal-header,
 .modal-footer {
     background: var(--lightgray);
+    color: var(--white);
 }
 
 .modal-header {
