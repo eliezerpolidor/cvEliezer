@@ -11,7 +11,7 @@
     display: flex;
     flex-direction: column;
     width: 25%;
-    height:550px;
+    height:730px;
     margin: 1px 2px;
     background: #bdc3c7;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to bottom, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
@@ -22,7 +22,7 @@
     display: flex;
     flex-direction: column;
     width: 75%;
-    height:550px;
+    height:730px;
     margin: 1px 2px;
     background: #bdc3c7;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to bottom, #91a9c1, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
@@ -67,6 +67,10 @@ h2{
 h3{
     font-size: 1.5vw;
     font-style: italic;
+}
+
+h4{
+    font-size: 1.5vw;
 }
 .h5{
     font-size: 28px;
@@ -137,7 +141,8 @@ hr{
 
 .open-modal {
     font-weight: bold;
-    font-size: 0.9rem;
+    /*font-size: 0.9rem;*/
+    font-size: 1.5vw;
     color: var(--white);
     padding: 0;
     margin-bottom: 0;
@@ -283,6 +288,10 @@ h2,
 h3{
     font-size: 2.5vw;
 }
+h4{
+    font-size: 3vw;
+}
+
     .h5{
         font-size: 50px;
         text-decoration:underline double white;
