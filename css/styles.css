@@ -1,368 +1,245 @@
-*{
+/* 1. RESET Y VARIABLES */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.main_menu{
-    display: flex;
-    
-}
-.bar_nav{
-    display: flex;
-    flex-direction: column;
-    width: 25%;
-    height:730px;
-    margin: 1px 2px;
-    background: #bdc3c7;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #455b71, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    box-shadow: 0 0 20px 0 rgba(83, 14, 14, 0.8);
-}
-.content{
-    display: flex;
-    flex-direction: column;
-    width: 75%;
-    height:730px;
-    margin: 1px 2px;
-    background: #bdc3c7;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #91a9c1, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #b2bcc6, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    box-shadow: 0 0 20px 0 rgba(83, 14, 14, 0.8);
-}
-.cvphoto{
-    width: 25;
-    height:calc(550-330) ;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-}
-.bar_nav_link{
-    width: 22;
-    height: calc(550-220);
-    overflow-y:auto;
-    margin: 2px;
-    font-size: 20px;
-}
-.photoeliezer {
-    border-radius: 50%;
-    margin: 5px 0 auto;
-    width: 35%;
-}
-a{
-    text-decoration: none;
-}
-h1,
-h2,
-h3{
-    color: white;
-    margin: auto;
-    padding: 0;
-    width: max-content;
-    font-size: 2.5vw;
-}
-h2{
-    font-size: 2vw;
-    font-style: italic;
-}
-h3{
-    font-size: 1.5vw;
-    font-style: italic;
-}
-
-h4{
-    font-size: 1.5vw;
-}
-.h5{
-    font-size: 28px;
-    text-decoration:underline double blue;
-    margin-bottom: 15px;
-}
-hr{
-    height: 3px;
-    background: #080808;
-    border-color: #080808;
-}
-
-.nav_menu_item{
-    list-style: none;
-}
-
-.emailwhatsapp{
-    font-size: 1.8vw;
-    margin: 30px 50px;
-}
-.bars{
-    display: none;
-}
-.imgemail,
-.imgwhatsApp{
-    width: 4%;
-}
-.imgbars{
-    width: 70%;
-    background:none;
-    border: none;
-    padding: 0;
-    margin: 0;
-    color: white;
-    
-}
-.contactame{
-    font-size: 40px;
-    text-align: center;
-}
-.coverletter{
-    font-size: 26px;
-    text-align: justify;
-    margin: 25px 45px;
-}
-/*******COPY FROM HERE**********/
-/* -----RESET RULES––––––––––– */
 
 :root {
     --lightgray: linear-gradient(hsl(186, 76%, 16%), hsl(223, 90%, 60%), hsl(240, 56%, 42%));
     --blue: steelblue;
     --white: #fff;
-    --black: rgba(0, 0, 0, 0.3);
-    --bounceEasing: cubic-bezier(0.51, 0.92, 0.24, 1.15);
+    --black: rgba(0, 0, 0, 0.4);
+    --bg-sidebar: linear-gradient(to bottom, #455b71, #bdc3c7);
+    --bg-content: linear-gradient(to bottom, #b2bcc6, #bdc3c7);
 }
 
-/*optiones of menu*/
+/* 2. ESTRUCTURA PRINCIPAL (ESCRITORIO) */
+.main_menu {
+    display: flex;
+    min-height: 100vh; /* Ocupa al menos el alto de la pantalla */
+}
 
-/*for create windows modal*/
-.btn-group {
+.bar_nav {
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 25%;
+    padding: 20px 10px;
+    background: var(--bg-sidebar);
+    box-shadow: 2px 0 15px rgba(0,0,0,0.3);
+    z-index: 10;
+}
+
+.content {
+    flex: 1; /* Ocupa el resto del espacio (75%) */
+    padding: 25px;
+    background: var(--bg-content);
+    position: relative;
+    padding-bottom: 80px; /* Espacio para el footer */
+}
+
+/* 3. ELEMENTOS DEL PERFIL */
+.cvphoto {
     text-align: center;
-    margin: 0.6em auto 0 auto;
-    font: 10px/1 sans-serif;
+    margin-bottom: 10px;
+}
+
+.photoeliezer {
+    border-radius: 50%;
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border: 4px solid white;
+    margin: 15px 0;
+}
+
+/* 4. TIPOGRAFÍA RESPONSIVA */
+h1 { font-size: 2rem; color: white; text-align: center; }
+h2 { font-size: 1.4rem; color: white; font-style: italic; text-align: center; }
+h3 { font-size: 1.1rem; color: white; text-align: center; margin-bottom: 15px; }
+h4 { font-size: 1.1rem; }
+
+.h5 {
+    font-size: 1.8rem;
+    text-decoration: underline double blue;
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+/* 5. MENÚ DE NAVEGACIÓN (BOTONES) */
+.nav_menu_item {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
 }
 
 .open-modal {
+    width:95%;
+    padding: 12px;
+    text-decoration: none;
     font-weight: bold;
-    /*font-size: 0.9rem;*/
-    font-size: 1.5vw;
-    color: var(--white);
-    padding: 0;
-    margin-bottom: 0;
-    border-radius: 5px;
-    background: linear-gradient(hsl(186, 76%, 16%), hsl(223, 90%, 60%), hsl(240, 56%, 42%));
-    box-shadow: 0 0 20px 0 blue;
-    border: #2c3e50 solid;
-    width: 80%;
+    font-size: 18px;
+    color: white;
+    background: var(--lightgray);
+    display: flex;
+    justify-content: center;
+    border: 1px solid #2c3e50;
+    border-radius: 8px;
     cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 255, 0.2);
+    transition: transform 0.2s;
 }
 
-/*------modal------*/
+.open-modal:hover { transform: scale(1.02); }
+
+/* 6. MODALES */
 .modal {
     position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    inset: 0;
+    background: var(--black);
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 1rem;
-    background: var(--black);
-    cursor: pointer;
-    visibility: hidden;
+    padding: 20px;
     opacity: 0;
-    transition: all 0.35s ease-in;
+    visibility: hidden;
+    transition: 0.3s;
+    z-index: 1000;
 }
 
-.modal.is-visible {
-    visibility: visible;
-    opacity: 1;
-}
+.modal.is-visible { opacity: 1; visibility: visible; }
 
 .modal-dialog {
-    position: relative;
-    max-width: 900px;
-    max-height: 100vh;
-    border-radius: 5px;
-    background: var(--white);
-    overflow: auto;
-    cursor: default;
-}
-
-.modal-dialog>* {
-    padding: 1rem;
-}
-
-.modal-header,
-.modal-footer {
-    background: var(--lightgray);
-    color: var(--white);
+    background: white;
+    width: 100%;
+    max-width: 800px;
+    max-height: 90vh;
+    overflow-y: auto;
+    border-radius: 12px;
 }
 
 .modal-header {
+    background: var(--lightgray);
+    color: white;
+    padding: 15px;
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    font-size: 1.5rem;
+    align-items: center;
 }
 
-.modal-header .close-modal {
-    font-size: 1rem;
+.align{
+    margin: 0 10px;
+    text-align: justify;
 }
 
-.modal p+p {
-    margin-top: 1rem;
+/* 7. HEADER DE CONTACTO Y FOOTER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
 }
 
-
-.modal-content {
-    font-size: 1.2rem;
+.header-experience{
+    background: #959595;
 }
 
-ol {
-    padding-left: 1.5rem;
+.emailwhatsapp {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #2c3e50;
+    text-decoration: none;
 }
 
-.imgin{
-    width: 22%;
+.contactame {
+    display: flex;
+    gap: 15px;
+    align-items: center;
 }
 
-/*FOR MOVIL*/
-@media (max-width:1048px){
-    .bar_nav_link {
-        display: none;
+.imgemail, .imgwhatsApp {
+    width: 35px;
+}
+
+.bars { display: none; } /* Oculto en PC */
+
+.footer {
+    position: fixed;
+    bottom: 8px;
+    left: 50%;
+    transform: translateX(-30%);
+    width: 90%;
+    max-width: 1070px;
+    background: var(--lightgray);
+    color: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 50px;
+    box-shadow: 0 5px 15px rgba(0,0,139,0.4);
+}
+
+.coverletter {
+    margin-top: 40px;
+    font-size: 1.4rem;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* ==========================================
+   8. MEDIA QUERY - OPTIMIZADO PARA MÓVILES
+   ========================================== */
+@media (max-width: 1048px) {
+    .main_menu {
+        flex-direction: column; /* Todo uno debajo de otro */
     }
-    .bar_nav, hr{
-        align-items: center;
-        position: absolute;
-        left: 0;
+
+    .bar_nav {
         width: 100%;
-        box-shadow: none;
+        min-height: auto;
+        padding: 15px;
+        display: block; /* Mantiene foto y nombre visibles */
     }
-    
-    .cvphoto{
-        width: 80%;
-        /* height:calc(550-330); */
+
+    /* El botón que activa el menú */
+    .bars {
+        display: block; /* Ahora es visible en móvil */
+        background: var(--lightgray);
+        color: white;
+        padding: 12px;
         text-align: center;
-        margin: 0;
-        padding: 0;
-    }
-    
-    hr{
-        height: 2px;
-        background-color:#888989 ;
-        border-color: #888989;
-        /* padding: 1px 0; */
-    }
-    .contactame{
-        font-size: 70px;
-        position: absolute;
-        top: 170px;
-        text-align: right;
-        /* right: 20px; */
-    }
-    .bars, 
-    .whatsap,
-    .email{
-        display:inline; 
-        margin-left: 30px;
-        font-size: 40px;
+        border-radius: 8px;
+        margin: 10px auto;
         cursor: pointer;
-        z-index: 6;
+        font-weight: bold;
+        width: 90%;
     }
-    .coverletter{
-        position: absolute;
-        top: 540px;
-        
-        font-size: 40px;
-        text-align: justify;
-        margin: 0;
-        padding: 20px;
+
+    /* OCULTAMOS LA LISTA DE BOTONES */
+    .nav_menu_item {
+        display: none; /* Desaparecen los botones */
+        flex-direction: column;
+        gap: 8px;
         width: 100%;
-        height: 100%;
-        background: #bdc3c7;  /* fallback for old browsers */
-        background: -webkit-linear-gradient(to bottom, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to bottom, #455b71, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-        overflow-y: auto;
+        padding: 10px 0;
     }
-h1,
-h2,
-h3{
-    font-size: 2.5vw;
-}
-h4{
-    font-size: 3vw;
-}
 
-    .h5{
-        font-size: 50px;
-        text-decoration:underline double white;
-        margin-bottom: 20px;
+    /* Clase para mostrar los botones cuando se haga click */
+    .nav_menu_item.active {
+        display: flex; /* Aparecen verticalmente */
     }
-    .bar_nav_link{
-        display:inline;
-        position: absolute;
-        top: 540px;
-        left: 2.1%;
-        width: 95%;
-        height: 160%;
-        z-index: 4;
-        background: #bdc3c7;  /* fallback for old browsers */
-        background: -webkit-linear-gradient(to bottom, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to bottom, #455b71, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-        box-shadow: 0 0 20px 0 rgba(83, 14, 14, 0.8);
-        visibility: hidden;
-        opacity: 0;
-        }
-        .bar_nav_link_visible{
-           visibility: visible;
-           opacity: 1;
-        }
-        .btn-group {
-            width: 80%;
-            font: 20px/1.5 sans-serif;
-        }  
-        .bar_nav_link{
-            font-size: 20px;
-        }
-        .open-modal {
-            font-size: 50px;
-            padding: 8px;
-            margin-bottom: 2px;
-            border-radius: 5px;
-            background: linear-gradient(hsl(186, 76%, 16%), hsl(223, 90%, 60%), hsl(240, 56%, 42%));
-            box-shadow: 0 0 20px 0 blue;
-            border: #2c3e50 solid;
-            width: 80%;
-            height: 100%;
-            cursor: pointer;
-        }
 
-        .whatsap {
-            color:darkgreen ;
-        }
-        
-        .email {
-            color:blue ;
-        }
-        .imgemail,
-        .imgwhatsApp{
-            width: 5%;
-        }
-        /*modal*/
-        .open-modal {
-            background: linear-gradient(hsl(186, 76%, 16%), hsl(223, 90%, 60%), hsl(240, 56%, 42%));
-            box-shadow: 0 0 20px 0 blue;
-            border: #2c3e50 solid;
-            width: 80%;
-            cursor: pointer;
-        }
+    .content {
+        width: 100%;
+        padding: 15px;
+    }
 
-        .modal-dialog {
-            position: relative;
-            max-width: 900px;
-            max-height: 100vh;
-            border-radius: 5px;
-            background: var(--white);
-            overflow: auto;
-            cursor: default;
-        }
+    .footer {
+        position: relative;
+        left: 0;
+        transform: none;
+        width: 100%;
+        margin-top: 20px;
+    }
 }
